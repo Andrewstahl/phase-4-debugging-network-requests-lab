@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: We had a typo where we called the class "Toys" instead of "Toy"
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: In the toys_controller, the update function didn't return any JSON, which is why the front-end couldn't update the likes immediately
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: The route wasn't setup for the destroy function. I added that route to the "routes" file so it matched the "toys_controller" file
